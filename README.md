@@ -1,4 +1,6 @@
-# fzf-z
+# fzf-fasd-jump
+
+## This is a fork of [andrewferrier/fzf-z](https://github.com/andrewferrier/fzf-z) quickly modified to use fasd instead of z. If and when https://github.com/andrewferrier/fzf-z/issues/17 is done, I'll likely deprecate this.
 
 This plugin was originally inspired as a mashup between
 [fzf](https://github.com/junegunn/fzf), and oh-my-zsh's [z
