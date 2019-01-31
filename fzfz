@@ -60,5 +60,5 @@ RECENTLY_USED_DIRS="{ $Z_LIST | sed 's/^[[:digit:].]*[[:space:]]*//' }"
 
 FZF_COMMAND="fzf --height ${FZF_TMUX_HEIGHT:-40%} ${FZFZ_EXTRA_OPTS} --no-sort --tiebreak=end,index -m --preview='$PREVIEW_COMMAND | head -\$LINES'"
 
-COMMAND="{ $SUBDIRS ; $RECENTLY_USED_DIRS ; $EXTRA_DIRS; } | $FZFZ_UNIQUIFIER | $FZF_COMMAND"
+COMMAND="{ $RECENTLY_USED_DIRS ; $EXTRA_DIRS; } | $FZFZ_UNIQUIFIER | $FZF_COMMAND"
 eval $COMMAND
